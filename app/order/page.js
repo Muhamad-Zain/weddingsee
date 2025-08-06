@@ -1,7 +1,8 @@
+export const dynamic = "force-dynamic";
+
 import { Suspense } from "react";
 import OrderClient from "./OrderClient";
 
-export const dynamic = "force-dynamic";
  
 export default function page() {
     return(
