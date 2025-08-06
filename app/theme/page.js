@@ -46,7 +46,7 @@ export default function Theme() {
                   <p>Lihat Preview</p>
                 </Link>
                 <Link
-                  href={`/order?id=${card.id}`}
+                  href={`/suspense?id=${card.id}`}
                   className="bg-fuchsia-800/70 p-2 rounded-md flex justify-center items-center text-white"
                 >
                   <GiBasket className="mr-2" />
