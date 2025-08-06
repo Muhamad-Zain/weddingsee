@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ffffff;
+  }
+}
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  /* margin: 0; */
+  padding: 0;
+  z-index: 0;
+}
+
+/* Tambahkan pseudo-element */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../public/assets/bgunsplass.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* ganti sesuai kebutuhan */
+  z-index: -1;
+  /* margin: ; */
+  @apply sm:mx-auto
+}
+
+/* body {
+  background: var(--background);
+  color: var(--foreground);
+  background-image: url('../public/assets/bgunsplass.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+
+.dancing {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  /* font-style: ; */
+  /* font-weight: 900; */
+}
+/* 
+.playfair{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+
+} */
+
+.play {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>;
+  font-style: normal; */
+}
+p {
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+}
