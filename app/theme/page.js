@@ -1,11 +1,16 @@
+'use client'
 import Image from "next/image";
 import Link from "next/link";
 import { FaRegEye } from "react-icons/fa";
 import { GiBasket } from "react-icons/gi";
 import data from "../data/data";
+import { useSearchParams } from "next/navigation";
 
 
 export default function Theme() {
+    const searchParams = useSearchParams();
+    const id = searchParams.get("id");
+    const card = data.find((item) => item.id.toString() === id);
 
     
     return(

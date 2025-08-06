@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useSearchParams } from "next/navigation";
 import data from "../data/data";
 // import Link from "next/link";
-import { Suspense } from 'react';
 
 import { FaRegEye } from "react-icons/fa";
 import { GiBasket } from "react-icons/gi";
@@ -26,8 +25,6 @@ export default function Order() {
     return(
  
         <>
-        {/* <Customer /> */}
-        <Suspense fallback={<div>Loading...</div>}>
         <div className="max-w-md text-center mx-auto">
             <Image
                 src={card.Img}
@@ -79,6 +76,6 @@ export default function Order() {
 
 
         </div>
-        </Suspense></>
+        </>
     )
 }
