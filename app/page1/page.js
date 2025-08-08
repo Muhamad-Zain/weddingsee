@@ -28,43 +28,24 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import style from './style.module.css'
+import Navbar from '../navbar/page'
 
 export default function Customer() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 2)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-  //  const titleRef = useRef(null)
-  // const [isNavbar, setIsNavbar] = useState(false)
+  // const [scrolled, setScrolled] = useState(false)
 
   // useEffect(() => {
-  //   const el = titleRef.current
-
   //   const handleScroll = () => {
-  //     const scrollY = window.scrollY
-  //     const maxScroll = 200
-
-  //     // Transformasi smooth
-  //     const scale = Math.max(1 - scrollY / maxScroll, 0.7)
-  //     const translateY = Math.min(scrollY / 2.5, 80)
-  //     el.style.transform = `translateY(-${translateY}px) scale(${scale})`
-
-  //     // Ubah layout jadi navbar saat scroll lewat batas
-  //     setIsNavbar(scrollY > 90)
+  //     setScrolled(window.scrollY > 2)
   //   }
-
   //   window.addEventListener('scroll', handleScroll)
   //   return () => window.removeEventListener('scroll', handleScroll)
   // }, [])
+
   return (
     <div className={style.background}>
+      <Navbar />
       {/* Hero Section */}
-      <div
+      {/* <div
         className={`transition-all duration-500 ease-in-out z-50 w-full ${
           scrolled
             ? 'fixed left-0 top-0 bg-white/90 backdrop-blur-md shadow-md py-2'
@@ -102,40 +83,11 @@ export default function Customer() {
             </>
           )}
         </div>
-      </div>
-      {/* <div
-        ref={titleRef}
-        className={`transition-transform duration-200 ease-out sticky top-10  z-50 w-full 
-          flex items-center justify-center gap-8
-          ${isNavbar ? 'flex-row py-10  bg-white/80 backdrop-blur-md shadow-md' : 'flex-col w-full py-10'}
-        `}
-      >
-        <h1
-          className="text-center text-3xl sm:text-4xl text-fuchsia-900 italic play font-bold"
-          style={{ textShadow: '2px 2px 4px rgba(136, 19, 152, 0.4)' }}
-        >
-          Welcome to
-        </h1>
-
-        <Image
-          src="/assets/logo.png"
-          width={90}
-          height={90}
-          alt="logo"
-          className="rounded-full w-[5rem] h-[5rem] sm:w-[6rem] sm:h-[6rem] border-3 border-[#9e0f92]"
-        />
-        {!isNavbar && (
-            <>
-              <h1 className="dancing text-2xl font-bold">Wedding See</h1>
-              <p className="bg-fuchsia-800/80 w-fit mx-auto rounded-xl text-xs py-2 px-4 text-white mt-1">
-                Platform Undangan Digital #1
-              </p>
-            </>
-          )}
       </div> */}
+      
 
       {/* Konten setelah scroll */}
-      <div className="bg-fuchsia-800/20 p-10  text-sm ">
+      <div className="bg-fuchsia-800/20 p-10 mt-56 text-sm ">
         <p className="pb-5">
           💌 Temukan undangan digital terbaik untuk momen spesialmu! Dari konsep elegan hingga tema
           kekinian, semua ada di katalog kami.
