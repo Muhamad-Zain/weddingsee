@@ -87,7 +87,7 @@ export default function Customer() {
       
 
       {/* Konten setelah scroll */}
-      {/* <div className="bg-fuchsia-800/20 p-10 mt-56 text-sm ">
+      <div className="bg-fuchsia-800/20 p-10 mt-36 text-sm ">
         <p className="pb-5">
           💌 Temukan undangan digital terbaik untuk momen spesialmu! Dari konsep elegan hingga tema
           kekinian, semua ada di katalog kami.
@@ -96,14 +96,14 @@ export default function Customer() {
           💌 Desain bisa disesuaikan, lengkap dengan fitur RSVP, galeri foto, peta lokasi, dan musik
           latar. Undangan siap dibagikan ke WhatsApp & media sosial hanya dalam hitungan menit!
         </p>
-      </div> */}
+      </div>
       <div>
         <Image 
         src="/assets/preview.png"
         width={1000}
         height={1000}
         alt='preview'
-        className='w-1/2 mx-auto mt-96 ' />
+        className='w-1/2 mx-auto  ' />
       </div>
       <p className='flex justify-center  mx-auto text-2xl font-semibold italic text-fuchsia-900 play '>
         Modern | Elegant | Asthetic <br /> Simple | Share Unlimited

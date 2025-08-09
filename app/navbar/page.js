@@ -65,16 +65,7 @@ export default function Navbar() {
             Platform Undangan Digital #1
           </p>
         </div>
-          <div className={`bg-fuchsia-800/20 p-10 mt-10 text-sm  ${scrolled ? 'hidden' : 'block'}`}>
-            <p className="pb-5">
-              💌 Temukan undangan digital terbaik untuk momen spesialmu! Dari konsep elegan hingga tema
-              kekinian, semua ada di katalog kami.
-            </p>
-            <p>
-              💌 Desain bisa disesuaikan, lengkap dengan fitur RSVP, galeri foto, peta lokasi, dan musik
-              latar. Undangan siap dibagikan ke WhatsApp & media sosial hanya dalam hitungan menit!
-            </p>
-          </div>
+          
     </div>
   )
 }
