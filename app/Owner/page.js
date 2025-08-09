@@ -37,20 +37,20 @@ export default function LayoutDashboard({children}) {
             </div>
             <div className="fixed w-52 h-screen bg-white shadow-md shadow-blue-300 top-0 left-0 bg-">
                 <div className="mt-36 px-5  text-center relative ">
-                    <div className={`p-3 text-sm play rounded-full my-2 ${activeMenu === 'dashboard' ? 'bg-blue-300' : ''}`}>
-                    <button onClick={() => handleActive('dashboard')}>Dashboard</button>
-                    </div>
+                    <button
+                     className={`p-3 text-sm w-40 play rounded-full my-2 ${activeMenu === 'dashboard' ? 'bg-blue-300' : ''}`}
+                     onClick={() => handleActive('dashboard')}>Dashboard</button>
                     <div className="border-b-2 border-b-gray-300 w-40" />
-                    <div className={`p-3 text-sm play rounded-full my-2 ${activeMenu === 'listInvite' ? 'bg-blue-300' : ''}`}>
-                    <button onClick={() => handleActive('listInvite')}>Daftar Undangan</button>
-                    </div>
+                    <button 
+                     className={`p-3 text-sm w-40 play rounded-full my-2 ${activeMenu === 'listInvite' ? 'bg-blue-300' : ''}`}
+                     onClick={() => handleActive('listInvite')}>Daftar Undangan</button>
                     <div className="border-b-2 border-b-gray-300 w-40" />
-                    <div className={`p-3 text-sm play rounded-full my-2 ${activeMenu === 'createInvite' ? 'bg-blue-300' : ''}`}>
-                    <button onClick={() => handleActive('createInvite')}>Buat Undangan</button>
-                    </div>
+                    <button
+                      className={`p-3 text-sm w-40 play rounded-full my-2 ${activeMenu === 'createInvite' ? 'bg-blue-300' : ''}`}
+                     onClick={() => handleActive('createInvite')}>Buat Undangan</button>
                 </div>
             </div>
-            <main className="mt-32 ml-40">
+            <main className="mt-32 pl-56 sm:pl-40 ">
                 {/* {children} */}
                 {activeMenu === 'dashboard' && <Dashboard />}
                 {activeMenu === 'listInvite' && <ListInvite />}

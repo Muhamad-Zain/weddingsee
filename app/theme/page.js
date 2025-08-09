@@ -31,13 +31,13 @@ export default function Theme() {
                 <p className="font-bold pt-2">{card.name}</p>
                 <div className="flex justify-around items-center sm:w-48 mx-auto">
                   <h2 className="bg-fuchsia-800/50 p-1 rounded-md text-sm text-white font-bold">
-                    40%
+                    50%
                   </h2>
                   <h2 className="line-through font-bold text-red-500 italic">
                     Rp. 100.000
                   </h2>
                 </div>
-                <h2 className="font-bold">Rp. 60.000</h2>
+                <h2 className="font-bold">Rp. 50.000</h2>
                 <Link
                   href={card.Preview}
                   className="border border-fuchsia-800/70 p-2 rounded-md flex justify-center items-center text-fuchsia-800 my-2"
