@@ -50,7 +50,7 @@ export default function LayoutDashboard({children}) {
                      onClick={() => handleActive('createInvite')}>Buat Undangan</button>
                 </div>
             </div>
-            <main className="mt-32 pl-56 sm:pl-40 ">
+            <main className="mt-32 pl-56 sm:pl-40 md:pl-56">
                 {/* {children} */}
                 {activeMenu === 'dashboard' && <Dashboard />}
                 {activeMenu === 'listInvite' && <ListInvite />}
