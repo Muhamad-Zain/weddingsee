@@ -45,14 +45,14 @@ const data = [
         {
             id: 7,
             Img: '/assets/theme/luxe3.png',
-            name: 'Wedding Luxe 02',
+            name: 'Wedding Luxe 03',
             Preview: 'https://wedding-luxe-tree.weddingsee.my.id/P3-tree',
             create: 'https://wedding-luxe-tree.weddingsee.my.id/addData'
         },
         {
             id: 8,
             Img: '/assets/theme/luxe4.png',
-            name: 'Wedding Luxe 02',
+            name: 'Wedding Luxe 04',
             Preview: 'https://wedding-luxe-four.weddingsee.my.id/P4-try',
             create: 'https://wedding-luxe-four.weddingsee.my.id/addData'
         },
