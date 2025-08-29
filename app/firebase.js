@@ -52,7 +52,22 @@ const addDataToFirebase = async (id, formData) => {
         console.log('error fecth data', error);
         return null
     }
-}
+  }
+  const fetchChart = async () => {
+    const dbRef =  ref(database)
+    const snapshot = await get(dbRef)
+
+    if (snapshot.exists()) {
+      const data = snapshot.val()
+      const result = Object.entries(data).map(([templateName, ids]) => ({
+          template: templateName,
+          count: Object.keys(ids).length
+        }));
+        return result;
+    } else {
+      return []
+    }
+  }
 
 
-export {addDataToFirebase, fetchData}
+export {addDataToFirebase, fetchData, fetchChart}

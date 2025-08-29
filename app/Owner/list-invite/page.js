@@ -4,7 +4,7 @@ import Link from "next/link";
 import '../../globals.css'
 
 export default function ListInvite() {
-    console.log(data);
+    // console.log(data);
     
     return(
         <div>

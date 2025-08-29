@@ -108,7 +108,7 @@ export default function OrderPage() {
         <p className="font-bold underline">{card.name}</p>
         <div className="text-md sm:text-lg flex justify-around items-center">
           <p>Price :</p>
-          <p>Rp. 60.000</p>
+          <p>Rp. 50.000</p>
         </div>
         <a
           href={urlWa}
